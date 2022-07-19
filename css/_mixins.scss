@@ -1,0 +1,15 @@
+@mixin title {
+    font-size: 52px;
+    line-height: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    @media(max-width: 991px) {
+        font-size: 48px;
+        line-height: 52px;
+    }
+    @media(max-width: 767px) {
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+    }
+}

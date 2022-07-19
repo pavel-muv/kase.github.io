@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tамара Касе</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="header__logo" data-i18n="demo.header.logo">
+                ТАМАРА КАСЕ
+            </a>
+            <nav class="header-nav">
+                 <ul class="header-list">
+                     <li class="header-list__item">
+                         <a href="#portfolio" class="header-list__link _link" data-i18n="demo.header.nav-1">Портфолио</a>
+                     </li>
+                     <li class="header-list__item">
+                         <a href="#price" class="header-list__link _link" data-i18n="demo.header.nav-2">стоимость</a>
+                     </li>
+                     <li class="header-list__item">
+                         <a href="#about" class="header-list__link _link" data-i18n="demo.header.nav-3">Обо мне</a>
+                     </li>
+                     <li class="header-list__item">
+                         <a href="#contacts" class="header-list__link _link" data-i18n="demo.header.nav-4">Контакты</a>
+                     </li>
+                 </ul>
+                 <div class="header-region">
+                     <div class="header-region__item lang-picker _ru selected">
+                         <div id="russian">
+                            РУС
+                         </div>
+                     </div>
+                     <div class="header-region__item lang-picker _en">
+                         <div id="english">ENG</div>
+                         </div>
+                 </div>
+                 <div class="header-contacts">
+                     <div class="header-contacts-list">
+                         <a href="tel:(+372)6106500" class="header-contacts__item" data-i18n="demo.links.phone">Телефон: (+372) 610 6500</a>
+                         <a href="mailto:tamarakase7@gmail.com" class="header-contacts__item">E-mail: tamarakase7@gmail.com</a>
+                         <a href="https://instagram.com/tamara_kase?igshid=YmMyMTA2M2Y=" class="header-contacts__item">Instagram: tamara_kase </a>
+                     </div>
+                     <div class="header-social">
+                        <a href="https://instagram.com/tamara_kase?igshid=YmMyMTA2M2Y=" class="social__link">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 2.25904C15.8133 2.25904 16.2651 2.25904 17.6205 2.25904C18.8253 2.25904 19.4277 2.56024 19.8795 2.71084C20.4819 3.01205 20.9337 3.16265 21.3855 3.61446C21.8374 4.06627 22.1386 4.51807 22.2892 5.12048C22.4398 5.57229 22.5904 6.1747 22.741 7.37952C22.741 8.73494 22.741 9.03615 22.741 12.5C22.741 15.9639 22.741 16.2651 22.741 17.6205C22.741 18.8253 22.4398 19.4277 22.2892 19.8795C21.988 20.4819 21.8374 20.9337 21.3855 21.3855C20.9337 21.8374 20.4819 22.1386 19.8795 22.2892C19.4277 22.4398 18.8253 22.5904 17.6205 22.741C16.2651 22.741 15.9639 22.741 12.5 22.741C9.03615 22.741 8.73494 22.741 7.37952 22.741C6.1747 22.741 5.57229 22.4398 5.12048 22.2892C4.51807 21.988 4.06627 21.8374 3.61446 21.3855C3.16265 20.9337 2.86145 20.4819 2.71084 19.8795C2.56024 19.4277 2.40964 18.8253 2.25904 17.6205C2.25904 16.2651 2.25904 15.9639 2.25904 12.5C2.25904 9.03615 2.25904 8.73494 2.25904 7.37952C2.25904 6.1747 2.56024 5.57229 2.71084 5.12048C3.01205 4.51807 3.16265 4.06627 3.61446 3.61446C4.06627 3.16265 4.51807 2.86145 5.12048 2.71084C5.57229 2.56024 6.1747 2.40964 7.37952 2.25904C8.73494 2.25904 9.18675 2.25904 12.5 2.25904ZM12.5 0C9.03615 0 8.73494 0 7.37952 0C6.0241 0 5.12048 0.301206 4.36747 0.602411C3.61446 0.903615 2.86145 1.35542 2.10843 2.10843C1.35542 2.86145 1.05422 3.46386 0.602411 4.36747C0.301206 5.12048 0.150602 6.0241 0 7.37952C0 8.73494 0 9.18675 0 12.5C0 15.9639 0 16.2651 0 17.6205C0 18.9759 0.301206 19.8795 0.602411 20.6325C0.903615 21.3855 1.35542 22.1386 2.10843 22.8916C2.86145 23.6446 3.46386 23.9458 4.36747 24.3976C5.12048 24.6988 6.0241 24.8494 7.37952 25C8.73494 25 9.18675 25 12.5 25C15.8133 25 16.2651 25 17.6205 25C18.9759 25 19.8795 24.6988 20.6325 24.3976C21.3855 24.0964 22.1386 23.6446 22.8916 22.8916C23.6446 22.1386 23.9458 21.5361 24.3976 20.6325C24.6988 19.8795 24.8494 18.9759 25 17.6205C25 16.2651 25 15.8133 25 12.5C25 9.18675 25 8.73494 25 7.37952C25 6.0241 24.6988 5.12048 24.3976 4.36747C24.0964 3.61446 23.6446 2.86145 22.8916 2.10843C22.1386 1.35542 21.5361 1.05422 20.6325 0.602411C19.8795 0.301206 18.9759 0.150602 17.6205 0C16.2651 0 15.9639 0 12.5 0Z" fill="#161616"/>
+                                <path d="M12.5 6.0241C8.88554 6.0241 6.0241 8.88554 6.0241 12.5C6.0241 16.1145 8.88554 18.9759 12.5 18.9759C16.1145 18.9759 18.9759 16.1145 18.9759 12.5C18.9759 8.88554 16.1145 6.0241 12.5 6.0241ZM12.5 16.7169C10.241 16.7169 8.28313 14.9096 8.28313 12.5C8.28313 10.241 10.0904 8.28313 12.5 8.28313C14.759 8.28313 16.7169 10.0904 16.7169 12.5C16.7169 14.759 14.759 16.7169 12.5 16.7169Z" fill="#161616"/>
+                                <path d="M19.1265 7.37952C19.9583 7.37952 20.6325 6.70525 20.6325 5.8735C20.6325 5.04174 19.9583 4.36747 19.1265 4.36747C18.2948 4.36747 17.6205 5.04174 17.6205 5.8735C17.6205 6.70525 18.2948 7.37952 19.1265 7.37952Z" fill="#161616"/>
+                                </svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCj6EgEF1xvKYYH8nsz5zu4g/featured" class="social__link">
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77669 18.4386C2.29528 18.2916 1.85602 18.0301 1.49599 17.6762C1.13596 17.3222 0.865721 16.8862 0.708072 16.4049C-0.192779 13.9173 -0.459698 3.53011 1.27527 1.47956C1.8527 0.812502 2.66796 0.40181 3.54408 0.336628C8.19848 -0.167606 22.5787 -0.100374 24.2303 0.504707C24.6948 0.656542 25.1192 0.912324 25.4717 1.25289C25.8241 1.59345 26.0955 2.00997 26.2655 2.47122C27.2498 5.04281 27.2832 14.388 26.1321 16.8587C25.8267 17.5019 25.3155 18.0228 24.6807 18.3378C22.9457 19.2118 5.07886 19.195 2.77669 18.4386ZM10.167 13.5644L18.5082 9.19434L10.167 4.7907V13.5644Z" fill="#161616"/>
+                                </svg>
+                        </a>
+                     </div>
+                 </div>
+            </nav>
+            <div class="header-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-info">
+                        <h1 class="hero__title" data-i18n="demo.title">
+                            </h1>
+                            <div class="hero-links">
+                                <a href="https://instagram.com/tamara_kase?igshid=YmMyMTA2M2Y=" class="social__link">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5 2.25904C15.8133 2.25904 16.2651 2.25904 17.6205 2.25904C18.8253 2.25904 19.4277 2.56024 19.8795 2.71084C20.4819 3.01205 20.9337 3.16265 21.3855 3.61446C21.8374 4.06627 22.1386 4.51807 22.2892 5.12048C22.4398 5.57229 22.5904 6.1747 22.741 7.37952C22.741 8.73494 22.741 9.03615 22.741 12.5C22.741 15.9639 22.741 16.2651 22.741 17.6205C22.741 18.8253 22.4398 19.4277 22.2892 19.8795C21.988 20.4819 21.8374 20.9337 21.3855 21.3855C20.9337 21.8374 20.4819 22.1386 19.8795 22.2892C19.4277 22.4398 18.8253 22.5904 17.6205 22.741C16.2651 22.741 15.9639 22.741 12.5 22.741C9.03615 22.741 8.73494 22.741 7.37952 22.741C6.1747 22.741 5.57229 22.4398 5.12048 22.2892C4.51807 21.988 4.06627 21.8374 3.61446 21.3855C3.16265 20.9337 2.86145 20.4819 2.71084 19.8795C2.56024 19.4277 2.40964 18.8253 2.25904 17.6205C2.25904 16.2651 2.25904 15.9639 2.25904 12.5C2.25904 9.03615 2.25904 8.73494 2.25904 7.37952C2.25904 6.1747 2.56024 5.57229 2.71084 5.12048C3.01205 4.51807 3.16265 4.06627 3.61446 3.61446C4.06627 3.16265 4.51807 2.86145 5.12048 2.71084C5.57229 2.56024 6.1747 2.40964 7.37952 2.25904C8.73494 2.25904 9.18675 2.25904 12.5 2.25904ZM12.5 0C9.03615 0 8.73494 0 7.37952 0C6.0241 0 5.12048 0.301206 4.36747 0.602411C3.61446 0.903615 2.86145 1.35542 2.10843 2.10843C1.35542 2.86145 1.05422 3.46386 0.602411 4.36747C0.301206 5.12048 0.150602 6.0241 0 7.37952C0 8.73494 0 9.18675 0 12.5C0 15.9639 0 16.2651 0 17.6205C0 18.9759 0.301206 19.8795 0.602411 20.6325C0.903615 21.3855 1.35542 22.1386 2.10843 22.8916C2.86145 23.6446 3.46386 23.9458 4.36747 24.3976C5.12048 24.6988 6.0241 24.8494 7.37952 25C8.73494 25 9.18675 25 12.5 25C15.8133 25 16.2651 25 17.6205 25C18.9759 25 19.8795 24.6988 20.6325 24.3976C21.3855 24.0964 22.1386 23.6446 22.8916 22.8916C23.6446 22.1386 23.9458 21.5361 24.3976 20.6325C24.6988 19.8795 24.8494 18.9759 25 17.6205C25 16.2651 25 15.8133 25 12.5C25 9.18675 25 8.73494 25 7.37952C25 6.0241 24.6988 5.12048 24.3976 4.36747C24.0964 3.61446 23.6446 2.86145 22.8916 2.10843C22.1386 1.35542 21.5361 1.05422 20.6325 0.602411C19.8795 0.301206 18.9759 0.150602 17.6205 0C16.2651 0 15.9639 0 12.5 0Z" fill="#161616"/>
+                                        <path d="M12.5 6.0241C8.88554 6.0241 6.0241 8.88554 6.0241 12.5C6.0241 16.1145 8.88554 18.9759 12.5 18.9759C16.1145 18.9759 18.9759 16.1145 18.9759 12.5C18.9759 8.88554 16.1145 6.0241 12.5 6.0241ZM12.5 16.7169C10.241 16.7169 8.28313 14.9096 8.28313 12.5C8.28313 10.241 10.0904 8.28313 12.5 8.28313C14.759 8.28313 16.7169 10.0904 16.7169 12.5C16.7169 14.759 14.759 16.7169 12.5 16.7169Z" fill="#161616"/>
+                                        <path d="M19.1265 7.37952C19.9583 7.37952 20.6325 6.70525 20.6325 5.8735C20.6325 5.04174 19.9583 4.36747 19.1265 4.36747C18.2948 4.36747 17.6205 5.04174 17.6205 5.8735C17.6205 6.70525 18.2948 7.37952 19.1265 7.37952Z" fill="#161616"/>
+                                        </svg>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCj6EgEF1xvKYYH8nsz5zu4g/featured" class="social__link">
+                                    <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77669 18.4386C2.29528 18.2916 1.85602 18.0301 1.49599 17.6762C1.13596 17.3222 0.865721 16.8862 0.708072 16.4049C-0.192779 13.9173 -0.459698 3.53011 1.27527 1.47956C1.8527 0.812502 2.66796 0.40181 3.54408 0.336628C8.19848 -0.167606 22.5787 -0.100374 24.2303 0.504707C24.6948 0.656542 25.1192 0.912324 25.4717 1.25289C25.8241 1.59345 26.0955 2.00997 26.2655 2.47122C27.2498 5.04281 27.2832 14.388 26.1321 16.8587C25.8267 17.5019 25.3155 18.0228 24.6807 18.3378C22.9457 19.2118 5.07886 19.195 2.77669 18.4386ZM10.167 13.5644L18.5082 9.19434L10.167 4.7907V13.5644Z" fill="#161616"/>
+                                        </svg>
+                                </a>
+                            </div>
+                        <a href="#portfolio" class="hero__btn btn _link" data-i18n="demo.button">Смотреть портфолио</a>
+                    </div>
+                    <div class="hero-img">
+                        <img src="images/hero-img.png" alt="Фотограф">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="advantages">
+            <div class="container">
+                <div class="advantages-content">
+                    <div class="advantages__item">
+                        5+
+                        <span data-i18n="demo.adv.experiense">Лет  опыта</span>
+                    </div>
+                    <div class="advantages__item" >
+                        1000+
+                        <span data-i18n="demo.adv.clients">Клиентов выбрали меня</span>
+                    </div>
+                    <div class="advantages__item" >
+                        700+
+                        <span data-i18n="demo.adv.session">Успешных фотосессий</span>
+                    </div>
+                    <div class="advantages__item" >
+                        200+
+                        <span data-i18n="demo.adv.moments">Запечтлено моментов</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery" id="portfolio">
+            <div class="container">
+                <h2 class="gallery__title" data-i18n="demo.titles.works">
+                    Мои работы
+                </h2>
+                <div class="gallery-filter">
+                    <div class="gallery-filter__item"  data-i18n="demo.filter.all">
+                        <a href="tab-1">Все</a></div>
+                    <div class="gallery-filter__item"  data-i18n="demo.filter.family"><a href="tab-2">Семейная съемка</a></div>
+                    <div class="gallery-filter__item"  data-i18n="demo.filter.bday"><a href="tab-3">День рождения</a></div>
+                    <div class="gallery-filter__item"  data-i18n="demo.filter.extract"><a href="tab-4">Выписка, крещение</a></div>
+                    <div class="gallery-filter__item"  data-i18n="demo.filter.wedding"><a href="tab-5">Свадьба</a></div>
+                    <div class="gallery-filter__item"  data-i18n="demo.filter.other"><a href="tab-6">Другое</a></div>
+                    <div class="gallery-filter__item"  data-i18n="demo.filter.video"><a href="tab-7">Видео</a></div>
+                </div>
+                <div class="gallery-wrapper" id="tabs">
+                    <div class="gallery-content" id="tab-1">
+                        <div class="gallery-item">
+                            <img src="images/gallery-1.jpg" alt="Фото"  data-fancybox="gallery" href="../images/img-2.jpg">
+                        </div>
+                        <div class="gallery-item _video">
+                            <img src="images/gallery-2.jpg" alt="Фото" data-fancybox="gallery" href="https://www.youtube.com/watch?v=_smnWNQH0Ao&ab_channel=TamaraKase">
+                        </div>
+                        <div class="gallery-item _small" >
+                            <img src="images/gallery-3.jpg" alt="Фото" data-fancybox="gallery" href="../images/img-1.jpg">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/img-4.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item _small">
+                            <img src="images/img-6.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/img-7.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item  _small">
+                            <img src="images/img-1.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-8.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item ">
+                            <img src="images/gallery-9.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-10.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-11.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item _small">
+                            <img src="images/gallery-12.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                    </div>
+                    <div class="gallery-content" id="tab-2">
+                        <div class="gallery-item">
+                            <img src="images/gallery-1.jpg" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item" >
+                            <img src="images/gallery-2.jpg" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-3.jpg" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-4.jpg" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-5.png" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-6.png" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-7.png" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-8.png" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-9.png" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-10.png" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-11.png" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-12.png" alt="Фото" data-fancybox="gallery" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="gallery-content" id="tab-3">
+                        <div class="gallery-item">
+                            <img src="images/gallery-1.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-2.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-3.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-4.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-5.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-6.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-7.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-8.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-9.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                    </div>
+                    <div class="gallery-content" id="tab-4">
+                        <div class="gallery-item">
+                            <img src="images/gallery-1.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-2.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-3.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-4.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-5.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-6.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-7.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-8.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-9.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-10.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-11.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-12.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                    </div>
+                    <div class="gallery-content" id="tab-5">
+                        <div class="gallery-item">
+                            <img src="images/gallery-1.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-2.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-3.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-4.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-5.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-6.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-7.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-8.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-9.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-10.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-11.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-12.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                    </div>
+                    <div class="gallery-content" id="tab-6">
+                        <div class="gallery-item">
+                            <img src="images/gallery-1.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-2.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-3.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-4.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-5.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-6.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-7.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-8.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-9.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-10.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-11.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-12.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                    </div>
+                    <div class="gallery-content" id="tab-7">
+                        <div class="gallery-item">
+                            <img src="images/gallery-1.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-2.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-3.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-4.jpg" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-5.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-6.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-7.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-8.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-9.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-10.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-11.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-12.png" alt="Фото" data-fancybox="gallery">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="price" id="price">
+            <div class="container">
+                <h2 class="price__title" data-i18n="demo.titles.price">Стоимость</h2>
+                <div class="price-content">
+                    <div class="price-card">
+                        <div class="price-card__title" data-i18n="demo.price.family">Семейная съемка</div> 
+                        <ul class="price-list">
+                            <li class="price-list__item" data-i18n="demo.price.one">1 час - X Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.two"> от 2 часов - Х Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.three">от 3 часов - X Euro</li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-card__title" data-i18n="demo.price.bday">День рождения</div> 
+                        <ul class="price-list">
+                            <li class="price-list__item" data-i18n="demo.price.one">1 час - X Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.two"> от 2 часов - Х Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.three">от 3 часов - X Euro</li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-card__title" data-i18n="demo.price.extract">Выписка, крещение</div> 
+                        <ul class="price-list">
+                            <li class="price-list__item" data-i18n="demo.price.one">1 час - X Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.two"> от 2 часов - Х Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.three">от 3 часов - X Euro</li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-card__title" data-i18n="demo.price.wedding">Свадьба</div> 
+                        <ul class="price-list">
+                            <li class="price-list__item" data-i18n="demo.price.one">1 час - X Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.two"> от 2 часов - Х Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.three">от 3 часов - X Euro</li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-card__title" data-i18n="demo.price.video">Промо ролики</div> 
+                        <ul class="price-list">
+                            <li class="price-list__item" data-i18n="demo.price.one">1 час - X Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.two"> от 2 часов - Х Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.three">от 3 часов - X Euro</li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-card__title" data-i18n="demo.price.other">Другое</div> 
+                        <ul class="price-list">
+                            <li class="price-list__item" data-i18n="demo.price.one">1 час - X Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.two"> от 2 часов - Х Euro</li>
+                            <li class="price-list__item" data-i18n="demo.price.three">от 3 часов - X Euro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="container">
+                
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="images/about.png" alt="Фотограф">
+                    </div>
+                    <div class="about-info">
+                        <h2 class="about__title" data-i18n="demo.titles.about">Обо мне</h2>
+                        <div class="about__desc">
+                           <p data-i18n="demo.about.paragraph.one"> Привет.</p>
+                            <p data-i18n="demo.about.paragraph.two">Меня зовут Олег Дудко. Я профессиональный фотограф из Москвы. Моя специализация – съемка эмоционального портрета.</p>
+                            <p data-i18n="demo.about.paragraph.three">Часть моих работ можно посмотреть тут же на сайте в разделе Портфолио, причем на ВСЕХ снимках там самые обычные люди. Большинство из них пришли на фотосессию в студии первый раз в жизни. Многие снимки черно-белые, потому что, на мой взгляд, они выразительнее и лучше раскрывают внутренний мир человека. Но клиент всегда получает оба варианта - цветной и черно-белый.</p>
+                            <p data-i18n="demo.about.paragraph.four">Меня зовут Олег Дудко. Я профессиональный фотограф из Москвы. Моя специализация – съемка эмоционального портрета. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="request" id="contacts">
+            <div class="container">
+                <div class="request__title" data-i18n="demo.titles.order">Запись
+                    на фотосессию</div>
+                <div class="request__text" data-i18n="demo.request">
+                    Чтобы записаться на фотосессию позвоните по номеру ХХХХХХХХ
+                    напишите на <a href="mailto:">mail@ewrwe.com</a> или свяжитесь со мной через инстаграм.
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contacts">
+                <a href="tel:(+372) 610 6500" class="footer-contacts__item" data-i18n="demo.links.phone">Телефон: (+372) 610 6500</a>
+                <a href="mailto:tamarakase7@gmail.com" class="footer-contacts__item">E-mail: tamarakase7@gmail.com</a>
+                <a href="#" class="footer-contacts__item">Instagram: tamara_kase </a>
+            </div>
+            <div class="footer-links">
+                <a href="https://instagram.com/tamara_kase?igshid=YmMyMTA2M2Y=" class="social__link">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 2.25904C15.8133 2.25904 16.2651 2.25904 17.6205 2.25904C18.8253 2.25904 19.4277 2.56024 19.8795 2.71084C20.4819 3.01205 20.9337 3.16265 21.3855 3.61446C21.8374 4.06627 22.1386 4.51807 22.2892 5.12048C22.4398 5.57229 22.5904 6.1747 22.741 7.37952C22.741 8.73494 22.741 9.03615 22.741 12.5C22.741 15.9639 22.741 16.2651 22.741 17.6205C22.741 18.8253 22.4398 19.4277 22.2892 19.8795C21.988 20.4819 21.8374 20.9337 21.3855 21.3855C20.9337 21.8374 20.4819 22.1386 19.8795 22.2892C19.4277 22.4398 18.8253 22.5904 17.6205 22.741C16.2651 22.741 15.9639 22.741 12.5 22.741C9.03615 22.741 8.73494 22.741 7.37952 22.741C6.1747 22.741 5.57229 22.4398 5.12048 22.2892C4.51807 21.988 4.06627 21.8374 3.61446 21.3855C3.16265 20.9337 2.86145 20.4819 2.71084 19.8795C2.56024 19.4277 2.40964 18.8253 2.25904 17.6205C2.25904 16.2651 2.25904 15.9639 2.25904 12.5C2.25904 9.03615 2.25904 8.73494 2.25904 7.37952C2.25904 6.1747 2.56024 5.57229 2.71084 5.12048C3.01205 4.51807 3.16265 4.06627 3.61446 3.61446C4.06627 3.16265 4.51807 2.86145 5.12048 2.71084C5.57229 2.56024 6.1747 2.40964 7.37952 2.25904C8.73494 2.25904 9.18675 2.25904 12.5 2.25904ZM12.5 0C9.03615 0 8.73494 0 7.37952 0C6.0241 0 5.12048 0.301206 4.36747 0.602411C3.61446 0.903615 2.86145 1.35542 2.10843 2.10843C1.35542 2.86145 1.05422 3.46386 0.602411 4.36747C0.301206 5.12048 0.150602 6.0241 0 7.37952C0 8.73494 0 9.18675 0 12.5C0 15.9639 0 16.2651 0 17.6205C0 18.9759 0.301206 19.8795 0.602411 20.6325C0.903615 21.3855 1.35542 22.1386 2.10843 22.8916C2.86145 23.6446 3.46386 23.9458 4.36747 24.3976C5.12048 24.6988 6.0241 24.8494 7.37952 25C8.73494 25 9.18675 25 12.5 25C15.8133 25 16.2651 25 17.6205 25C18.9759 25 19.8795 24.6988 20.6325 24.3976C21.3855 24.0964 22.1386 23.6446 22.8916 22.8916C23.6446 22.1386 23.9458 21.5361 24.3976 20.6325C24.6988 19.8795 24.8494 18.9759 25 17.6205C25 16.2651 25 15.8133 25 12.5C25 9.18675 25 8.73494 25 7.37952C25 6.0241 24.6988 5.12048 24.3976 4.36747C24.0964 3.61446 23.6446 2.86145 22.8916 2.10843C22.1386 1.35542 21.5361 1.05422 20.6325 0.602411C19.8795 0.301206 18.9759 0.150602 17.6205 0C16.2651 0 15.9639 0 12.5 0Z" fill="#161616"/>
+                        <path d="M12.5 6.0241C8.88554 6.0241 6.0241 8.88554 6.0241 12.5C6.0241 16.1145 8.88554 18.9759 12.5 18.9759C16.1145 18.9759 18.9759 16.1145 18.9759 12.5C18.9759 8.88554 16.1145 6.0241 12.5 6.0241ZM12.5 16.7169C10.241 16.7169 8.28313 14.9096 8.28313 12.5C8.28313 10.241 10.0904 8.28313 12.5 8.28313C14.759 8.28313 16.7169 10.0904 16.7169 12.5C16.7169 14.759 14.759 16.7169 12.5 16.7169Z" fill="#161616"/>
+                        <path d="M19.1265 7.37952C19.9583 7.37952 20.6325 6.70525 20.6325 5.8735C20.6325 5.04174 19.9583 4.36747 19.1265 4.36747C18.2948 4.36747 17.6205 5.04174 17.6205 5.8735C17.6205 6.70525 18.2948 7.37952 19.1265 7.37952Z" fill="#161616"/>
+                        </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCj6EgEF1xvKYYH8nsz5zu4g/featured" class="social__link">
+                    <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.77669 18.4386C2.29528 18.2916 1.85602 18.0301 1.49599 17.6762C1.13596 17.3222 0.865721 16.8862 0.708072 16.4049C-0.192779 13.9173 -0.459698 3.53011 1.27527 1.47956C1.8527 0.812502 2.66796 0.40181 3.54408 0.336628C8.19848 -0.167606 22.5787 -0.100374 24.2303 0.504707C24.6948 0.656542 25.1192 0.912324 25.4717 1.25289C25.8241 1.59345 26.0955 2.00997 26.2655 2.47122C27.2498 5.04281 27.2832 14.388 26.1321 16.8587C25.8267 17.5019 25.3155 18.0228 24.6807 18.3378C22.9457 19.2118 5.07886 19.195 2.77669 18.4386ZM10.167 13.5644L18.5082 9.19434L10.167 4.7907V13.5644Z" fill="#161616"/>
+                        </svg>
+                </a>
+            </div>
+        </div>
+        <div class="assets">
+            <img src="/images/circle-left.png" alt="Круги">
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/bundle.js"></script>
+</body>
+</html>
